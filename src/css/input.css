@@ -1,6 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Import compiled Sass */
+@import "tailwindcss";
 @import "../scss/main.css";
+
+/* Scan all PHP and JS files in the root and all subdirectories */
+@source "../../**/*.php";
+@source "../**/*.js";
+
+@theme {
+    --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
